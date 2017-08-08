@@ -1,0 +1,25 @@
+html, body
+	overflow-x hidden
+
+body, body a
+	color #333333
+
+body
+	line-height 1.8em
+
+	a, a:hover, a:visited, a:active
+		text-decoration none !important
+		outline none !important
+		color #333333
+
+.logged-in.admin-bar
+	.top-responsive-menu
+		a.dropdown-toggle
+			top: 60px
+
+	@media screen and (max-width: 600px)
+		#wpadminbar
+			position fixed !important
+
+@import './404'
+@import './test'
