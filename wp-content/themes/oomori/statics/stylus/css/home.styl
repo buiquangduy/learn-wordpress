@@ -1,0 +1,337 @@
+/* #home style sheet */
+#home
+    ol.carousel-indicators 
+        position absolute
+        bottom -28px
+        margin 0 auto
+        left 0
+        right 0
+        width 246px
+
+
+    ol.carousel-indicators 
+        li
+            float left
+            width 62px
+            height 10px
+            margin 0 10px
+            box-sizing border-box
+            background #cbcbcb
+            &.active
+                background blue
+                
+    .carousel-inner
+        background white
+        .item
+            >img
+                width 50%
+                float left
+                opacity 0.3
+                &:first-child
+                    margin-left -25%
+                &:nth-child(3)
+                    margin-right -25%
+            a
+                width 50%
+                float left
+                img
+                    width 100%
+                    opacity 1
+                    margin-left 0
+                    
+    .company-fifty-year
+        margin-top 5%
+        .images
+            text-align center
+            margin-top 33px
+            @media screen and (max-width: 768px)
+                margin-top 0px
+            .col-sm-4
+                @media screen and (min-width: 993px)
+                    padding 0
+            .fifty-year-image
+                width 250px
+                margin auto
+                @media screen and (max-width: 992px)
+                    width 100%
+            .fifty-year-image-description
+                padding-top 17px
+                font-family "hirakakupro-w3"
+                font-size 1.25em
+                line-height 34px
+                @media screen and (max-width: 768px)
+                    padding 0px 15px
+                a
+                    color #365ca9
+                    font-family "hirakakupro-w6"
+                    &:hover
+                        text-decoration underline
+        .button-link
+            text-align center
+            margin-top 61px
+            @media screen and (max-width: 768px)
+                margin-top 15px
+
+    .membership
+        margin-top 104px
+        .list-oomoris
+            position relative
+            height 480px
+            @media screen and (max-width: 768px)
+                height 400px
+            @media screen and (max-width: 500px)
+                height 300px
+            @media screen and (max-width: 375px)
+                height 200px
+            background url("../../../img/list-oomoris.png") no-repeat center
+            background-size cover
+            p
+                position absolute
+                left 0
+                right 0
+                bottom 0
+                text-align center
+                font-family "copperplate"
+                color color-white
+                font-size 5.78125vw
+                line-height 0.8
+                margin-bottom 0
+                opacity 0.8
+                @media screen and (max-width: 768px)
+                    line-height 1
+                    font-size 9vw
+                @media screen and (min-width: 769px) and (max-width: 1199px)
+                    font-size 8vw
+                    line-height 1
+        @media screen and (max-width: 768px)
+            margin-top 45px
+        .list-oomoris
+            img
+                width 100%
+    .introduce
+        margin-top 50px
+        .content
+            padding-top 34px
+            div
+                p
+                    line-height 35px
+                    font-size 1.125em
+                img
+                    width 100%
+                    
+    .news
+        margin-top 100px
+        @media screen and (max-width: 768px)
+            margin-top 15px
+        background background-color
+        div.container
+            margin-top 93px
+            margin-bottom 48px
+            padding-bottom 60px
+            @media screen and (max-width: 768px)
+                margin-top 60px
+                margin-bottom 5px
+            background white
+            .title
+                margin-top -63px
+            .btn-category
+                text-align center
+            .notice
+                padding 10px 8.8% 40px
+                ul
+                    li
+                        border-top 1px dotted color-ccc
+                        padding 21px 0
+                        @media screen and (max-width: 1199px)
+                            line-height 30px
+                        font-size 1.125em
+                        &:last-child
+                            border-bottom 1px dotted color-ccc
+                        .category
+                            font-size 0.89em
+                            color color-white
+                            background-color color-365ca9
+                            padding 5px 30px
+                            border-radius 5px
+                            text-decoration none
+                            font-family hirakakupro-w6
+                        .date
+                            margin-left 30px
+                            @media screen and (min-width: 992px) and (max-width: 1199px)
+                                margin-left 10px
+                            color color-365ca9
+                            @media screen and (width: 375px)
+                                margin-left 70px
+                        .title
+                            margin-left 40px
+                            @media screen and (min-width: 992px) and (max-width: 1199px)
+                                margin-left 4px
+                            @media screen and (max-width: 991px)
+                                margin-left 0
+                            a
+                                text-decoration none
+                                color color-333333
+    .business
+        padding-top 50px
+        margin-bottom 4.7%
+        padding-left 0
+        padding-right 0
+        @media screen and (max-width: 767px)
+            padding-left 15px
+            padding-right 15px
+    .store-information
+        .top-info
+            background-color background-color
+            .title
+                img
+                    margin-top 50px
+                p
+                    padding-bottom 387px
+                    @media screen and (min-width: 992px) and (max-width: 1199px)
+                        padding-bottom 330px
+                    @media screen and (min-width: 768px) and (max-width: 991px)
+                        padding-bottom 250px
+                    @media screen and (max-width: 767px)
+                        padding-bottom 40%
+        .last-info
+            .content
+                margin-top -25%
+                .content-left, .content-right
+                    .top
+                        background url("../../../img/store-info-bg.png") repeat
+                        text-align center
+                        color color-white
+                        .img-store
+                            position relative
+                            z-index 1
+                            img
+                                margin-top -12.6%
+                            .title-img
+                                width 300px
+                                @media screen and (max-width: 767px)
+                                    width 225px
+                                height 40px
+                                margin -20px auto 0
+                                position relative
+                                z-index 2
+                                background-color rgba(240,240,240,0.90)
+                                display table
+                                p
+                                    display table-cell
+                                    vertical-align middle
+                                    color color-365ca9
+                                    font-family "hirakakupro-w6"
+                                    font-size 1.125em
+                        .text
+                            font-size 1em
+                            font-family "hirakakupro-w3"
+                            p
+                                line-height 1.8
+                                margin-top 15px
+                                margin-bottom 0
+                        .tel
+                            margin-top 4px
+                            padding-bottom 26px
+                            @media screen and (max-width: 767px)
+                                margin-bottom 0
+                            a
+                                text-decoration none
+                                font-family "hirakakupro-w6"
+                                font-size 1.25em
+                                color color-white
+                                span
+                                    font-size 0.8em
+                                    font-family "hirakakupro-w6"
+                    .map
+                        padding 0
+                .content-left
+                    padding-left 0
+                    @media screen and (max-width: 767px)
+                        padding-left 15px
+                .content-right
+                    padding-right 0
+                    @media screen and (max-width: 767px)
+                        margin-top 20%
+                        padding-right 15px
+    .categories
+        text-align center
+        margin-top 42px 
+        @media screen and (max-width: 768px)
+            margin-top -15px
+        >div
+            @media screen and (max-width: 768px)
+                margin-top 30px
+        .category
+            .name
+                padding 46px 0 18px 0
+                font-family "hirakakupro-w6"
+                font-size 1.25em
+                color color-365ca9
+                background url("../../../img/icn-title-yellow.png") no-repeat center center
+                background-position-y 17px
+                border-bottom 1px dotted #cccccc
+            .content
+                text-align left
+                margin-top 24px
+                font-family "hirakakupro-w3"
+                font-size 1em
+    .advertisement
+        margin-top 7.6%
+        .bn-oomorisyouji
+            padding 0
+            @media screen and (max-width: 768px)
+                padding 10% 15px 0
+        .left
+            padding-left 0
+            @media screen and (max-width: 768px)
+                padding-left 15px
+        .right
+            padding-right 0
+            @media screen and (max-width: 768px)
+                padding-right 15px
+        @media screen and (max-width: 768px)
+            margin-top 0px
+        >div
+            a
+                height auto
+                img
+                    width 100%
+            &:nth-child(2)
+                margin-top 60px 
+                @media screen and (max-width: 768px)
+                    a
+                        img
+                            margin-bottom 50px  
+                
+    .brand-group
+        margin-top 100px
+        @media screen and (max-width: 768px)    
+            margin-top 0px
+        padding-bottom 15px
+        background background-color
+        .container
+            .name
+                margin 38px 0px 5px
+                text-align center
+                font-size 1.875em
+                font-family "YuMincho"
+            ul
+                margin-top 23px
+                text-align center
+                li
+                    display inline-block
+                    width 24%
+                    margin-bottom 20px
+                    text-align center
+                    @media screen and (max-width: 768px)
+                        width 100%
+                    a
+                        text-decoration none
+                        p
+                            margin-top 10px
+                            font-size 0.875em
+                            color color-333333
+                .brand-last
+                    width 30%
+                    @media screen and (max-width: 768px)
+                        width 100%
