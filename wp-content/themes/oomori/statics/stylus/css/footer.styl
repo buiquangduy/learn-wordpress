@@ -1,0 +1,93 @@
+/* footer style sheet */
+footer
+	width 100%
+	height auto
+	background color-365ca9
+	z-index 550
+	position relative
+	#page-top
+		&:before
+			content url("../../../img/img-page-top.png")
+			position absolute
+			top -57px
+			float right
+			right 3%
+			z-index 550
+		&:hover
+			cursor pointer
+	.company-contact
+		float left
+		padding 13px 0 30px 0
+		@media only screen and (max-width: 991px)
+			text-align center
+			padding 13px 0 15px 0
+		@media only screen and (max-width: 375px)
+			padding 13px 0 3px 0
+		.company-name
+			font-family Times New Roman
+			color #fff
+			font-size 2.38em
+			font-style italic
+			font-weight bold
+			text-decoration none
+			cursor pointer
+			@media only screen and (max-width: 375px)
+				font-size 35px
+			@media only screen and (max-width: 320px)
+				font-size 30px
+		ul
+			margin 15px 0 0 0
+			li
+				color white
+				font-size 0.875em
+				line-height 1.5
+				&:first-child
+					font-family hirakakupro-w6
+					font-size 1em
+				a
+					color color-white
+					text-decoration none
+
+	.footer-menu
+		float right
+		padding-right 0
+		@media only screen and (max-width: 991px)
+			padding-right 15px
+		nav
+			width auto
+			height auto
+			ul
+				float right
+				margin 33px 0 0 0
+				@media only screen and (max-width: 991px)
+					display table
+					margin 20px auto
+					float none
+				li
+					float left
+					a
+						font-size 1em
+						padding-left 31px
+						color white !important
+						&:hover
+							text-decoration underline !important
+							text-decoration-color white !important
+						@media only screen and (max-width: 1199px)
+							padding-left 22px
+						@media only screen and (max-width: 991px)
+							padding 0 7px
+						@media only screen and (max-width: 375px)
+							font-size 13px
+							padding-left 15px
+						@media only screen and (max-width: 320px)
+							font-size 12px
+							padding-left 10px
+	.copyright
+		width 100%
+		height auto
+		background white !important
+		padding 10px 0px 15px 0px
+		p
+			font-size 0.875em
+			text-align center
+			margin 0

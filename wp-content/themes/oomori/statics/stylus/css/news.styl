@@ -1,0 +1,186 @@
+#news
+#date
+#category
+#news-detail
+    #banner-first 
+        background url("/imgs/banner-01.png") no-repeat center
+        background-size cover
+        .text-banner
+            margin-left 28.6%
+            width 200px
+            @media only screen and (max-width: 768px)
+                width: 100px;
+            @media only screen and (max-width: 320px)
+                width 60px
+                margin-left 15%
+            span 
+                text-align center
+                font-size 60px
+                font-family "YuMincho"
+                display block
+                line-height 1
+                background rgba(255, 234, 0, 0.6)
+                padding 40% 0
+                color #000000
+                @media only screen and (max-width: 768px)
+                    padding: 25% 0;
+                    font-size: 7.8vw;
+                @media only screen and (max-width: 320px)
+                    padding 40% 0
+    #blog
+        a
+            color #333
+            font-weight normal
+            &:hover
+                color #ff9900
+                text-decoration underline
+        padding 13px 0 0
+        @media screen and (max-width: 768px)
+            padding 13px 10px 0
+        #blog-left
+            padding-left 0
+            @media screen and (max-width: 768px)
+                padding-right 0
+            .blog-content
+                margin-bottom 8%
+                .title-blog
+                    display inline-block
+                    font-size 1.125em
+                    font-weight bold
+                    line-height 1.2em
+                    border-left solid 6px #b2d1c2
+                    padding-left 10px
+                a.title-blog
+                    color #3366cc 
+                    border-left-color #ccc
+                    &:hover
+                        color #ff9900 
+                        text-decoration underline
+                .post-meta-date
+                    color #666
+                    font-size 0.875em
+                    line-height 1em
+                    text-align right
+                    padding 7px 15px
+                    margin 1.0% 0 2%
+                    background #eee
+                .note 
+                    p 
+                        font-size 1em
+                        img
+                            @media screen and (max-width: 768px)
+                                margin 0 auto 25px
+                .detail
+                    padding-bottom 50px
+                    p
+                        margin-bottom 16px
+                        img
+                            display block
+                            max-width 100%
+                            height auto
+                            margin-bottom 25px
+                .category
+                    color #666
+                    font-style italic
+                    margin-top 5%
+                    padding-top 1.5%
+                    border-top dotted 1px #ccc
+                    a
+                        color #3366cc
+                        &:hover
+                            color #ff9900
+              .aligncenter
+                    clear both
+                    display block
+                    margin-left auto
+                    margin-right auto
+            .pagination 
+                display block
+                clear both
+                padding 20px 0
+                position relative
+                font-family "Times New Roman", Times, serif
+                font-size 1.28em
+                letter-spacing -.40em
+                text-align center
+                span 
+                    display inline-block
+                    margin-left 2px
+                    padding 6px 9px 5px 9px
+                    text-decoration none
+                    width auto
+                    color #333
+                    border solid 1px #fff
+                    background #eee
+                    letter-spacing normal
+                    vertical-align bottom
+                    font-family "Times New Roman", Times, serif
+                .current 
+                    background #fff
+                    color #333
+                    border-color #ccc
+                .navi-common 
+                    font-size 1.28em
+                    background none 
+                    color #ccc 
+                    background none
+        #blog-right
+            padding 0
+            h3.widget-title
+                color #999
+                border-bottom 1px solid #999
+                font-size 1em
+            #calendar
+                #embeddedCalendar
+                    table 
+                        width 100%
+                    .calendar
+                        font-size 0.875em
+                        .caption
+                            font-size 1.125em
+                            color #999
+                            font-weight bold
+                            text-align center
+                            padding 0px 0 7px
+                        thead 
+                            th 
+                                background #666
+                                padding 5px 0px
+                                color #fff
+                                text-align center
+                        tfoot 
+                            tr 
+                                border-top double 3px #ccc
+                                td 
+                                    padding 10px
+                                td#prev 
+                                    text-align left 
+                                td#next
+                                    text-align right 
+                        tbody 
+                            background #f6f6f6
+                            tr
+                                td 
+                                    color #888
+                                    line-height 1em
+                                    padding 10px 0
+                                    width 14.285%
+                                    text-align center
+                                    a 
+                                        font-weight bold
+                                &:nth-child(odd)
+                                    background #fff
+                        .otherDay 
+                            opacity 0.2
+            .widget-common
+                margin-bottom 35px
+                h3 
+                    padding-bottom 10px
+                    margin-bottom 20px
+                ul 
+                    list-style outside disc
+                    margin-left 20px
+                    color #333
+                    li 
+                        margin-top 10px
+                        font-size 0.875em
