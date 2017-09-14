@@ -129,6 +129,11 @@ function _s_scripts() {
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
+function create_shortcode1()
+{
+	return "test thu cai source code dau tien";
+}
+add_shortcode('shortcode1', 'create_shortcode1');
 /**
  * Implement the Custom Header feature.
  */
@@ -153,3 +158,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Add ReduxCore framework option Theme WordPress
+ */
+if( !class_exists( 'ReduxFramework' ) ) {
+	require_once get_template_directory() . "/reduxcore/framework.php";
+}
+if( !isset( $redux_demo ) ) {
+	require_once get_template_directory() . "/reduxcore/theme-config.php";
+}

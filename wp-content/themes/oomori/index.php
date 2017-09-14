@@ -261,5 +261,13 @@ get_header(); ?>
     <?php
     get_footer();
     ?>
+    <?php
+    foreach ($redux_demo['opt-checkbox-slide'] as $key => $row) {
+	    $arrURL[] = ['full_image' => $row['image'], 'thumbnail' => $row['image'], 'link' => '#', 'title' => $row['title']];
+    }
+    ?>
+    <script>
+      var firstview_list = <?php echo json_encode($arrURL, JSON_FORCE_OBJECT) ?>;
+    </script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/scroll.js'?>"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/slide.js'?>"></script>

@@ -1,12 +1,4 @@
 jQuery(function() {
-  var firstview_list = {
-
-    "index-img-slider-01.png" : ["#","slide 1"],
-    "index-img-slider-02.png" : ["#","slide 2"],
-    "index-img-slider-03.png" : ["#","slide 3"],
-    "eof" : ""
-  };
-
   // EOFを削除
   delete firstview_list["eof"];
 
@@ -43,7 +35,7 @@ jQuery(function() {
 
     var n = 0;
     var h = Object.keys(firstview_list).length - 1;
-    jQuery.each(firstview_list, function(k, v){
+    jQuery.each(firstview_list, function(key, v){
 
       var item = document.createElement("li");
       if(n < h){
@@ -53,17 +45,20 @@ jQuery(function() {
       }
 
       var anchor = document.createElement("a");
-      jQuery(anchor).attr("href", v[0]).appendTo(item);
+      jQuery(anchor).attr("href", v['link']).appendTo(item);
 
       var img = document.createElement("img");
-      var app_root = 'wp-content/themes/oomori';
-      jQuery(img).attr({src: app_root + "/img/" + k, alt: v[1]}).addClass("img-responsive aligncenter").appendTo(anchor);
+      jQuery(img).attr({src: v['full_image'], alt: v['title']}).addClass("aligncenter").appendTo(anchor);
 
       var controll_item = document.createElement("li");
+      // var width_img = 100 / Object.keys(firstview_list).length + '%';
       jQuery(controll_item).attr("id", 'ct-' + n).appendTo(controll);
 
       var controll_anchor = document.createElement("a");
       jQuery(controll_anchor).addClass("remove").text('').appendTo(controll_item);
+
+      // var controll_anchor_img = document.createElement("img");
+      // jQuery(controll_anchor_img).attr({src: v['thumbnail'], alt: v['title']}).addClass("img-responsive").css('width', '100%').appendTo(controll_anchor);
 
       if(n == 0){
         jQuery(item).addClass("active");
@@ -72,7 +67,6 @@ jQuery(function() {
 
       n++;
     });
-
 
     jQuery(container).insertAfter("#header_wrap");
 
@@ -93,35 +87,6 @@ jQuery(function() {
         firstview_action_timer = setTimeout(firstview_action, firstview_action_span * 0.5);
       }
     });
-
-    /*
-     var touchX = 0;
-     var nextX = 0;
-     jQuery("ul#firstview").bind({
-     // フリック開始時
-     "touchstart": function(e) {
-     clearTimeout(firstview_action_timer);
-     clearTimeout(tap_event_timer);
-     touchX = event.changedTouches[0].pageX;
-     },
-     // フリック中
-     "touchmove": function(e) {
-     clearTimeout(firstview_action_timer);
-     clearTimeout(tap_event_timer);
-     e.preventDefault();
-     nextX = event.changedTouches[0].pageX;
-     },
-     // フリック終了
-     "touchend": function(e) {
-     clearTimeout(firstview_action_timer);
-     clearTimeout(tap_event_timer);
-     tap = 1;
-     if(touchX != nextX){
-     _action((touchX > nextX ? 'right' : 'left'));
-     }
-     }
-     });
-     */
 
     jQuery("a.firstview_arrow").click(function(){
       touch = 0;
